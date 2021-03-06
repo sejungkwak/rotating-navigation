@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Recursive', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    height: 100vh;
+    margin: 0;
+    background-color: #30475e;
+}
+
+.main {
+    position: absolute;
+    background-color: #dddddd;
+    color: #222831;
+    padding: 5rem 20rem;
+    margin: 0;
+    transition: 1000ms linear;
+    transform-origin: top left;
+}
+
+.rotating {
+    transform: rotate(-20deg);
+    transform-origin: top left;
+    transition: transform 1000ms ease-out;
+}
+
+.title {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    margin-top: 0;
+}
+
+.introduction, .extract {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.outside-view-image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.btn-background {
+    position: absolute;
+    background-color: #f05454;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 1;
+    top: -110px;
+    left: -110px;
+}
+
+.btn-sidenav-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    left: -100px;
+    width: 0px;
+    height: 100%;
+    overflow: hidden;
+    transition: width 1200ms linear;
+}
+
+.sidenav-slide {
+    width: 500px;
+}
+
+.fa-bars {
+    position: absolute;
+    margin: 25px 25px;
+    color: #dddddd;
+    z-index: 2;
+    cursor: pointer;
+    transition: 1000ms linear;
+}
+
+.translating {
+    transform: translate(100px, -100px) rotate(-100deg);
+    transform-origin: top left;
+    transition: transform 1000ms linear;
+}
+
+.fa-times {
+    position: absolute;
+    margin: 50px -25px;
+    color: #dddddd;
+    z-index: 2;
+    transition: 1000ms linear;
+}
+
+.close-translating {
+    transform: translate(55px, -25px) rotate(-90deg);
+    transition: transform 1000ms linear;
+    cursor: pointer;
+}
+
+.nav-menu-link {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #dddddd;
+    margin-bottom: 2rem;
+}
+
+.home, .about, .contact {
+    transition: 1000ms linear;
+}
+
+.home-moving {
+    margin-left: 120px;
+    transition: margin-left 1000ms linear;
+}
+
+.about-moving {
+    margin-left: 135px;
+    transition: margin-left 1300ms linear;
+}
+
+.contact-moving {
+    margin-left: 150px;
+    transition: margin-left 1600ms linear;
+}
+
+.fas {
+    margin-right: 10px;
+}
